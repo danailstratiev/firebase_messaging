@@ -2,7 +2,10 @@
   package="io.flutter.plugins.firebasemessaging">
 
   <application>
-    <service android:name=".FlutterFirebaseMessagingService">
+    <service 
+      android:name=".FlutterFirebaseMessagingService"
+      android:exported="true"
+      >
       <intent-filter>
         <action android:name="com.google.firebase.MESSAGING_EVENT"/>
       </intent-filter>
